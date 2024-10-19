@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* New Classes from index.html */
+.body-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-class {
+    text-align: center;
+    width: 100%;
+}
+
+.title-class {
+    text-align: center;
+    width: 100%;
+}
+
+.large-box-class {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+.input-text-class {
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-button-class,
+.clear-text-button-class,
+.new-chat-button-class {
+    padding: 10px 20px;
+    margin: 0 5px; /* Space between buttons */
+}
+
+.footer-class {
+    /* Add any specific styles for footer-class if needed */
+}
+
+.footer-content-class {
+    /* Add any specific styles for footer-content-class if needed */
+}
