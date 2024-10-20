@@ -348,11 +348,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function generateElizaReply(userMessage) {
         const lowerCaseMessage = userMessage.toLowerCase();
+        console.log("User message:", lowerCaseMessage); // Debugging statement
         for (const key in keywords) {
             const [priority, patterns] = keywords[key];
             for (const [pattern, responses] of patterns) {
                 const regex = new RegExp(pattern.replace("*", "(.*)"), "i");
                 const match = lowerCaseMessage.match(regex);
+                console.log("Pattern:", pattern, "Match:", match); // Debugging statement
                 if (match) {
                     const response = responses[Math.floor(Math.random() * responses.length)];
                     if (response.includes("{0}")) {
