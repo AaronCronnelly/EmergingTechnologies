@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Webpage</title>
+    <title>ChatBot</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body-class">
     <header class="header-class">
-        <h1 class="title-class">Welcome to My Basic Webpage</h1>
+        <h1 class="title-class">ChatBot</h1>
     </header>
     <main>
         <div class="large-box-class">
-            <input type="text" class="input-text-class">
+            <div class="message-box-class" id="messageBox">
+                <!-- Messages will be displayed here -->
+            </div>
+            <input type="text" class="input-text-class" id="userInput">
             <div class="button-container">
-                <button class="submit-button-class">Submit</button>
-                <button class="clear-text-button-class">Clear</button>
-                <button class="new-chat-button-class">New Chat</button>
+                <button class="submit-button-class" id="submitButton">Submit</button>
+                <button class="clear-text-button-class" id="clearButton">Clear</button>
+                <button class="new-chat-button-class" id="newChatButton">New Chat</button>
             </div>
         </div>
+        <p class="info-paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi fugit alias impedit? Nihil rerum ad illo numquam quasi nobis unde enim adipisci? Recusandae facilis, veritatis odio quos numquam dolore iure!
+        </p>
     </main>
     <footer class="footer-class">
-        <p class="footer-content-class">© 2023 My Basic Webpage</p>
+        <p class="footer-content-class">© 2023 ChatBot by Aaron</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
